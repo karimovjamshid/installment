@@ -1,0 +1,78 @@
+/* General styles
+ ===================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $text;
+    font-size: 1.4rem;
+    color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: $gray;
+    transition: box-shadow .3s linear, background-color .3s linear;
+    border: none;
+    font-size: 1.7rem;
+    padding: .5em 2em;
+    font-family: inherit;
+    color: $white;
+    border-radius: .3em;
+    min-width: 200px;
+
+    &:focus {
+        box-shadow: $shadow;
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken($gray, 20%);
+    }
+}
+
+.input {
+    font-size: 1.4rem;
+    padding: .7em 2em;
+    border: 1px solid $light;
+    border-radius: .3em;
+    transition: box-shadow .3s linear;
+
+    &:focus {
+        box-shadow: $shadow;
+        outline: none;
+    }
+}
